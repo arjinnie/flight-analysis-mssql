@@ -27,7 +27,7 @@ Bu analizler, havayolu şirketlerinin operasyonel verimliliğini artırmak, geci
   - `hour`, `minute`, `time_hour`: Kalkış saati ve tam zaman damgası
   - 
 - **Kapsamı**: 2013 yılında New York havalimanlarından (EWR-JFK-LGA) kalkan uçuşlar
-- 
+  
 
 ## SQL Sorguları / SQL Queries
 Aşağıdaki örnek sorgu, MS SQL Server için optimize edilmiştir ve tüm sorgular `queries.sql` dosyasında bulunmaktadır.
