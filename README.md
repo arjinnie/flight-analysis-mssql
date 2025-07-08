@@ -60,8 +60,9 @@ ORDER BY avg_departure_delay DESC;
 
 
 
-## Kullanım Adımları / Getting Started 
-- Veri setini (flights.csv) indirin.
+## Kullanım Adımları / Getting Started  
+
+- Veri setini (flights.csv) indirmek için flights.zip dosyasını inidirip ayıklayın.
 - SQL Server Management Studio (SSMS) üzerinde yeni bir veritabanı oluşturun:
   ```sql
   CREATE DATABASE flightsDB;
@@ -69,7 +70,7 @@ ORDER BY avg_departure_delay DESC;
 - Oluşturduğunuz veritabanına sağ tıklayın → "Tasks" → "Import Data".
 - Kaynak olarak flights.csv dosyasını seçin.
 - Hedef tablo adını flights olarak belirleyin ve sütunları eşleştirin.
-  
+
 - Verinin doğru yüklendiğini kontrol etmek için:
 - 
    ```sql
