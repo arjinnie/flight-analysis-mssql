@@ -67,7 +67,7 @@ ORDER BY avg_departure_delay DESC;
   ```sql
   CREATE DATABASE flightsDB;
   ```
-- Oluşturduğunuz veritabanına sağ tıklayın → "Tasks" → "Import Data".
+- Oluşturduğunuz veritabanına sağ tıklayın → "Tasks" → "Import Flat File".
 - Kaynak olarak flights.csv dosyasını seçin.
 - Hedef tablo adını flights olarak belirleyin ve sütunları eşleştirin.
 
