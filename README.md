@@ -29,35 +29,12 @@ Bu analizler, havayolu şirketlerinin operasyonel verimliliğini artırmak, geci
 - **Kapsamı**: 2013 yılında New York havalimanlarından (EWR-JFK-LGA) kalkan uçuşlar
   
 
-## SQL Sorguları / SQL Queries
-Aşağıdaki örnek sorgu, MS SQL Server için optimize edilmiştir ve tüm sorgular `queries.sql` dosyasında bulunmaktadır.
-
-
-### 1. Ortalama Kalkış Gecikmesi
-Havayolu şirketlerinin ortalama kalkış gecikmelerini hesaplar ve en yüksek gecikmeye sahip 10 şirketi listeler.
-
-```sql
-SELECT TOP 10
-    carrier,
-    name,
-    AVG(CAST(dep_delay AS FLOAT)) AS avg_departure_delay
-FROM flights
-WHERE dep_delay IS NOT NULL
-GROUP BY carrier, name
-ORDER BY avg_departure_delay DESC;
-```
-
-
-
-
 
 ## Gereksinimler / Requierements
 
 - Microsoft SQL Server (Express sürümü yeterli)
 - SQL Server Management Studio (SSMS) veya Azure Data Studio
 - Veri seti / Data Set: flights.csv
-
-
 
 
 ## Kullanım Adımları / Getting Started  
@@ -78,6 +55,26 @@ ORDER BY avg_departure_delay DESC;
   
   ```
 - queries.sql dosyasındaki sorguları SQL Server Management Studio (SSMS) ile çalıştırın.
+
+  ## SQL Sorguları / SQL Queries
+Aşağıdaki örnek sorgu, MS SQL Server için optimize edilmiştir ve tüm sorgular `queries.sql` dosyasında bulunmaktadır.
+
+
+### 1. Ortalama Kalkış Gecikmesi
+Havayolu şirketlerinin ortalama kalkış gecikmelerini hesaplar ve en yüksek gecikmeye sahip 10 şirketi listeler.
+
+```sql
+SELECT TOP 10
+    carrier,
+    name,
+    AVG(CAST(dep_delay AS FLOAT)) AS avg_departure_delay
+FROM flights
+WHERE dep_delay IS NOT NULL
+GROUP BY carrier, name
+ORDER BY avg_departure_delay DESC;
+```
+
+
 
 
 
